@@ -105,7 +105,7 @@ public class ReservaCinema {
           if (escolha == 1) {
             reservarAssento(cinema, coluna, linha);
           } else {
-            System.out.println("programa encerrado!");
+            System.out.println("Assento inválido!");
           }
           break;
         case 3:
@@ -120,11 +120,15 @@ public class ReservaCinema {
           if (escolhaCancelamento == 1) {
             cancelarReserva(cinema, colunaCancelamento, linhaCanelamento);
           } else {
-            System.out.println("programa encerrado!");
+            System.out.println("Assento inválido!");
           }
           break;
+        case 0:
+          System.out.println("Programa encerrado!");
+          opcao = 0;
+          break;
         default:
-          System.out.println("Opcao invalida -- programa encerrado!");
+          System.out.println("Opção inválida!");
           break;
       }
     }
